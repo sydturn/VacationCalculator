@@ -11,7 +11,120 @@
     tools:context="com.example.sydney.vacationcalculator.MainActivity">
 
     <TextView
+        android:text="Starting Value:"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_marginTop="17dp"
+        android:id="@+id/startingValueText"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_row="6"
+        android:layout_column="0" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:layout_alignTop="@+id/startingValueText"
+        android:layout_toEndOf="@+id/startingValueText"
+        android:layout_toRightOf="@+id/startingValueText"
+        android:id="@+id/startingValue"
+        android:layout_row="1"
+        android:layout_column="1"
+        android:layout_alignBottom="@+id/startingValueText" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/dailyAccumulation"
+        android:layout_alignTop="@+id/dailyAccumulatedText"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="13dp"
+        android:layout_marginEnd="13dp"
+        android:layout_alignBottom="@+id/dailyAccumulatedText" />
+
+    <ProgressBar android:id="@+id/countdownTimer"
+        android:layout_width="218dp"
+        android:indeterminate="false"
+        android:progressDrawable="@drawable/circular_progress_bar"
+        android:background="@drawable/circular_shape" style="?android:attr/progressBarStyleHorizontal"
+        android:max="100"
+        android:progress="100"
+        android:layout_height="200dp"
+        android:layout_row="2"
+        android:layout_column="0"
+        android:layout_below="@+id/dailyAccumulatedText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp" />
+
+    <Button
+        android:text="Use 8 hours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/removeEight"
+        android:layout_row="3"
+        android:layout_column="0"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="46dp" />
+
+    <TextView
+        android:text="Current Hours:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView7"
+        android:layout_row="3"
+        android:layout_column="0"
+        android:layout_marginTop="46dp"
+        android:layout_below="@+id/countdownTimer"
+        android:layout_toRightOf="@+id/startingValueText"
+        android:layout_toEndOf="@+id/startingValueText" />
+
+    <TextView
+        android:text="0.0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/collectedHours"
+        android:layout_alignBaseline="@+id/textView7"
+        android:layout_alignBottom="@+id/textView7"
+        android:layout_toLeftOf="@+id/removeOne"
+        android:layout_toStartOf="@+id/removeOne" />
+
+    <TextView
+        android:text="Daily Accumulation:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dailyAccumulatedText"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:layout_below="@+id/startingValueText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="13dp" />
+
+    <Button
+        android:text="Use 1 hour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/removeOne"
+        android:layout_alignBaseline="@+id/removeFour"
+        android:layout_alignBottom="@+id/removeFour"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="Use 4 hours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/removeFour"
+        android:layout_alignBaseline="@+id/removeEight"
+        android:layout_alignBottom="@+id/removeEight"
+        android:layout_alignLeft="@+id/dailyAccumulation"
+        android:layout_alignStart="@+id/dailyAccumulation" />
 </RelativeLayout>
