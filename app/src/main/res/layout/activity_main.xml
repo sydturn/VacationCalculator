@@ -72,20 +72,6 @@
         android:layout_below="@+id/dailyAccumulation"
         android:layout_centerHorizontal="true" />
 
-    <ProgressBar android:id="@+id/countdownTimer"
-        android:layout_width="218dp"
-        android:indeterminate="false"
-        android:progressDrawable="@drawable/circular_progress_bar"
-        android:background="@drawable/circular_shape" style="?android:attr/progressBarStyleHorizontal"
-        android:max="100"
-        android:progress="100"
-        android:layout_height="200dp"
-        android:layout_row="2"
-        android:layout_column="0"
-        android:layout_below="@+id/updateButton"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="13dp" />
-
     <Button
         android:text="Use 8 hours"
         android:layout_width="wrap_content"
@@ -135,4 +121,18 @@
         android:layout_above="@+id/removeEight"
         android:layout_toRightOf="@+id/startingValueText"
         android:layout_toEndOf="@+id/startingValueText" />
+
+    <ProgressBar android:id="@+id/countdownTimer"
+        android:layout_width="218dp"
+        android:indeterminate="false"
+        android:progressDrawable="@drawable/circular_progress_bar"
+        android:background="@drawable/circular_shape" style="?android:attr/progressBarStyleHorizontal"
+        android:max="100"
+        android:progress="100"
+        android:layout_height="200dp"
+        android:layout_row="2"
+        android:layout_column="0"
+        android:layout_below="@+id/updateButton"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/collectedHours" />
 </RelativeLayout>
