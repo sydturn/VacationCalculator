@@ -83,23 +83,6 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
-    <Button
-        android:text="Use 4 hours"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/removeFour"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
-
-    <Button
-        android:text="Use 1 hour"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/removeOne"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
     <ProgressBar android:id="@+id/countdownTimer"
         android:layout_width="218dp"
         android:indeterminate="false"
@@ -137,14 +120,6 @@
         android:layout_alignStart="@+id/updateButton" />
 
     <TextView
-        android:text="="
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView"
-        android:layout_below="@+id/countdownTimer"
-        android:layout_centerHorizontal="true" />
-
-    <TextView
         android:text="0 days"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -152,4 +127,32 @@
         android:layout_below="@+id/countdownTimer"
         android:layout_alignLeft="@+id/removeOne"
         android:layout_alignStart="@+id/removeOne" />
+
+    <Button
+        android:text="Use 1 hour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/removeOne"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="="
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@+id/countdownTimer"
+        android:layout_alignRight="@+id/updateButton"
+        android:layout_alignEnd="@+id/updateButton" />
+
+    <Button
+        android:text="Use 4 hours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/removeFour"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
