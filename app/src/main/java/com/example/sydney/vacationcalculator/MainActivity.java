@@ -14,12 +14,10 @@ import android.widget.TextView;
 import static java.lang.Float.parseFloat;
 
 public class MainActivity extends AppCompatActivity {
-    float collectedHours;
-    float startingHours;
-    float dailyAccumulated;
     TextView showCurrentHoursCollected;
     EditText startingValue;
     EditText dailyAccumulation;
+    float collectedHours;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,22 +32,37 @@ public class MainActivity extends AppCompatActivity {
         Button oneHour = (Button)findViewById(R.id.removeOne);
         Button updateButton = (Button)findViewById(R.id.updateButton);
 
-
+        //remove appropriate number of vacation days and update the current
         eightHours.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 collectedHours -= 8;
+                SharedPreferences sharedPref = getPreferences(Context.MODE_PRIVATE);
+                SharedPreferences.Editor editor = sharedPref.edit();
+                editor.putFloat("currentValue", collectedHours);
+                editor.commit();
+                showCurrentHoursCollected.setText(Float.toString(collectedHours));
             }
         });
 
         fourHours.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 collectedHours -= 4;
+                SharedPreferences sharedPref = getPreferences(Context.MODE_PRIVATE);
+                SharedPreferences.Editor editor = sharedPref.edit();
+                editor.putFloat("currentValue", collectedHours);
+                editor.commit();
+                showCurrentHoursCollected.setText(Float.toString(collectedHours));
             }
         });
 
         oneHour.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 collectedHours -= 1;
+                SharedPreferences sharedPref = getPreferences(Context.MODE_PRIVATE);
+                SharedPreferences.Editor editor = sharedPref.edit();
+                editor.putFloat("currentValue", collectedHours);
+                editor.commit();
+                showCurrentHoursCollected.setText(Float.toString(collectedHours));
             }
         });
 
@@ -57,13 +70,13 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Float startingHoursValue = Float.parseFloat((startingValue).getText().toString());
                 Float dailyAccumulatedValue = Float.parseFloat((dailyAccumulation).getText().toString());
-
                 //update values based on user input
                 SharedPreferences sharedPref = getPreferences(Context.MODE_PRIVATE);
                 SharedPreferences.Editor editor = sharedPref.edit();
                 editor.putFloat("dailyAccumulated", dailyAccumulatedValue);
                 editor.putFloat("currentValue", startingHoursValue);
                 showCurrentHoursCollected.setText(Float.toString(startingHoursValue));
+                collectedHours = startingHoursValue;
                 editor.commit();
             }
         });

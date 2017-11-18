@@ -72,28 +72,6 @@
         android:layout_below="@+id/dailyAccumulation"
         android:layout_centerHorizontal="true" />
 
-    <TextView
-        android:text="0.0"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/collectedHours"
-        android:layout_alignBaseline="@+id/textView7"
-        android:layout_alignBottom="@+id/textView7"
-        android:layout_alignRight="@+id/updateButton"
-        android:layout_alignEnd="@+id/updateButton" />
-
-    <TextView
-        android:text="Current Hours:"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView7"
-        android:layout_row="3"
-        android:layout_column="0"
-        android:layout_marginBottom="19dp"
-        android:layout_above="@+id/removeFour"
-        android:layout_toRightOf="@+id/startingValueText"
-        android:layout_toEndOf="@+id/startingValueText" />
-
     <ProgressBar android:id="@+id/countdownTimer"
         android:layout_width="218dp"
         android:indeterminate="false"
@@ -135,4 +113,26 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="0.0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/collectedHours"
+        android:layout_alignBaseline="@+id/textView7"
+        android:layout_alignBottom="@+id/textView7"
+        android:layout_toRightOf="@+id/removeFour"
+        android:layout_toEndOf="@+id/removeFour" />
+
+    <TextView
+        android:text="Current Hours:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView7"
+        android:layout_row="3"
+        android:layout_column="0"
+        android:layout_marginBottom="13dp"
+        android:layout_above="@+id/removeEight"
+        android:layout_toRightOf="@+id/startingValueText"
+        android:layout_toEndOf="@+id/startingValueText" />
 </RelativeLayout>
