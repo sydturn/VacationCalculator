@@ -99,15 +99,14 @@ public class MainActivity extends AppCompatActivity {
 
         //get last value and input it where appropriate
         SharedPreferences sharedPref = getPreferences(Context.MODE_PRIVATE);
-        float currentValue = sharedPref.getFloat("currentValue", 0);
+        collectedHours = sharedPref.getFloat("currentValue", 0);
         startingValue.setText(Float.toString(sharedPref.getFloat("currentValue", 0)));
         dailyAccumulation.setText(Float.toString(sharedPref.getFloat("dailyAccumulated", 0)));
-        collectedHours = currentValue;
         //set progress bar value to stored value
         progressBar = (ProgressBar)findViewById(R.id.countdownTimer);
-        progressBar.setProgress((int)Math.floor(currentValue));
+        progressBar.setProgress((int)Math.floor(collectedHours));
 
         //set current hours collected to stored value
-        showCurrentHoursCollected.setText(Float.toString(currentValue));
+        showCurrentHoursCollected.setText(Float.toString(collectedHours));
     }
 }
