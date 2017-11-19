@@ -75,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
                 //update collected text
                 showCurrentHoursCollected.setText(Float.toString(startingHoursValue));
                 //update collected to be starting
-                numberOfDays.setText(Math.floor(collectedHours/8) + " days");
+                numberOfDays.setText(Float.toString(startingHoursValue/8) + " days");
                 collectedHours = startingHoursValue;
                 //update progress bar
                 progressBar.setProgress((int)Math.floor(collectedHours));
