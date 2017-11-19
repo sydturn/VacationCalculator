@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\Sydney\.android\build-cache\8e66dc65bafc99f0362b9401b1e4e7e758352f5f\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\Sydney\Desktop\lkjjhguyg\VacationCalculator\app\build\intermediates\pre-dexed\debug\classes_217cef89c9559207718aeb315d794cde288ec949.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Sydney\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.1.1\support-annotations-25.1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b59b6ee8d6ecc03e672d253800430343493a6ed8">
+        <dex dex="C:\Users\Sydney\Desktop\lkjjhguyg\VacationCalculator\app\build\intermediates\pre-dexed\debug\support-annotations-25.1.1_cf0321cd70918e29de4fc3047ce8fc400f3011f0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Sydney\.android\build-cache\ff3e7914d914b45f3ce04e462ed27f5bcc8670e5\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ecb496cc08dd52551fc5ec6db3bc0632e95a89bb">
+        <dex dex="C:\Users\Sydney\Desktop\lkjjhguyg\VacationCalculator\app\build\intermediates\pre-dexed\debug\classes_fa63fbc54b11b28f8bf48dd840ef4a38edb7d369.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Sydney\.android\build-cache\695976316591e77278f199d074eb5a5062b7ad83\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7bde4c34162092e0a77e7f12dc85ed77c484cf5c">
+        <dex dex="C:\Users\Sydney\Desktop\lkjjhguyg\VacationCalculator\app\build\intermediates\pre-dexed\debug\classes_c661525c4edd151834407d80c47f846f8d5f6114.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Sydney\.android\build-cache\9f6dd64b8c122e1f8b68b98f72abd9aca53aec91\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3e04ac8ca644ea7baddf6fdcf72e15c79e9df94a">
+        <dex dex="C:\Users\Sydney\Desktop\lkjjhguyg\VacationCalculator\app\build\intermediates\pre-dexed\debug\classes_6d9c3d5b1fa831dd4c4feaabaf5e122c744a8cfd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Sydney\.android\build-cache\8d8464297e43708d757434d74a8ee6b6284e6b5f\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="02741d05d4b697fba5e279e9881aaa1da0ca7c7f">
+        <dex dex="C:\Users\Sydney\Desktop\lkjjhguyg\VacationCalculator\app\build\intermediates\pre-dexed\debug\classes_15b2483223747b11ab3f58ddce1bc07081420ce0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Sydney\.android\build-cache\f462f2ca52c6d0915245011a30b8a34de872d64a\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0d191c1a09e4892d059e5ce749e4ad4e08129e35">
+        <dex dex="C:\Users\Sydney\Desktop\lkjjhguyg\VacationCalculator\app\build\intermediates\pre-dexed\debug\classes_82e2a7daa92d3231512d556734e0d22f65be20fa.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Sydney\.android\build-cache\ee158a1bf2c5311fdc5d0008fc1d4fe0ea12379f\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e2719c102dca3a7a5b02ce07f769362da6ddb4ab">
+        <dex dex="C:\Users\Sydney\Desktop\lkjjhguyg\VacationCalculator\app\build\intermediates\pre-dexed\debug\classes_e2198fb371775befff18ec89fee8017b327a669e.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sydney\Desktop\lkjjhguyg\VacationCalculator\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="510aa6efc159983dfbffa676a0dae37568c0a46f">
+        <dex dex="C:\Users\Sydney\Desktop\lkjjhguyg\VacationCalculator\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_7233b999ff866ff8b848c0dd80f1d56ac71e8936\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Sydney\.android\build-cache\961238918e9c6c0810081c77038fdfca9df7e7ca\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c03bf57f358aa10d253f21989e93bcf6014b3b17">
+        <dex dex="C:\Users\Sydney\Desktop\lkjjhguyg\VacationCalculator\app\build\intermediates\pre-dexed\debug\classes_a6c6a9b843af641d79a55b97791c3daedb5c6132.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Sydney\.android\build-cache\d72c240c992563bf95c1f6744e6f364b21b16f38\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0fb891e8f0cfba0513043a7bb357513d229ca2cd">
+        <dex dex="C:\Users\Sydney\Desktop\lkjjhguyg\VacationCalculator\app\build\intermediates\pre-dexed\debug\classes_ebf475a96306d8ada2d6bbe395c2110f16a8f2f4.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Sydney\Desktop\lkjjhguyg\VacationCalculator\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="58756db1505a282bd40dd51dbbccac067685a1f5">
+        <dex dex="C:\Users\Sydney\Desktop\lkjjhguyg\VacationCalculator\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_7e485bc10225f365da36aacb012775b348493637\classes.dex" />
+    </item>
+
+</items>

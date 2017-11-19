@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -88,6 +89,8 @@ public class MainActivity extends AppCompatActivity {
         //get last login and see how much time has passed so we can update vacation days based on accumulative per day
         long today = new Date().getTime();
         long lastLogin = sharedPref.getLong("lastlogin", 0);
+
+
         int workDaysPassed = getWorkingDaysBetweenTwoDates(new Date(lastLogin), new Date(today));
         accumulation = sharedPref.getFloat("dailyAccumulated", 0);
         Float additionalHours = workDaysPassed * accumulation;
@@ -107,9 +110,10 @@ public class MainActivity extends AppCompatActivity {
         //set current hours collected to stored value
         showCurrentHoursCollected.setText(Float.toString(collectedHours));
 
-        //save today as last login day for future reference
+        //save today as last login day for future reference and update current value
         SharedPreferences.Editor editor = sharedPref.edit();
         editor.putLong("lastlogin", today);
+        editor.putFloat("currentValue", collectedHours);
         editor.commit();
     }
 
@@ -135,7 +139,7 @@ public class MainActivity extends AppCompatActivity {
         int workDays = 0;
 
         //Return 0 if start and end are the same
-        if (startCal.getTimeInMillis() == endCal.getTimeInMillis()) {
+        if (startCal.get(Calendar.YEAR) == endCal.get(Calendar.YEAR) && startCal.get(Calendar.DAY_OF_YEAR) == endCal.get(Calendar.DAY_OF_YEAR)) {
             return 0;
         }
         if (startCal.getTimeInMillis() > endCal.getTimeInMillis()) {
